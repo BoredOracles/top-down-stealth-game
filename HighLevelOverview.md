@@ -32,5 +32,8 @@
 * Types of robots: Walk fast/see little, walk slow/bigger field of vision
 * When switched off, reboot after a number of seconds
 * When walking around, you find scraps of paper that describe the plot
+* When seen, robot chases you efficiently and alerts other robots nearby to also chase you
+* The alert is ongoing, checks while chasing for new nearby robots
+* Robots may or may not move faster
 
 ##If the player is caught, he is sent to the ground floor.
