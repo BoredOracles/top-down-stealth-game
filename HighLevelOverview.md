@@ -27,4 +27,10 @@
 * When one is found, it is written down by the character
 * 1 digit per floor - floors can be done in any order
 
+##Design:
+* Show Robot field of vision
+* Types of robots: Walk fast/see little, walk slow/bigger field of vision
+* When switched off, reboot after a number of seconds
+* When walking around, you find scraps of paper that describe the plot
+
 ##If the player is caught, he is sent to the ground floor.
