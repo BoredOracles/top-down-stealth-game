@@ -1,0 +1,64 @@
+Low level overview
+
+Classes
+
+Robot:
+Collider
+Position
+Direction
+Field of Vision
+Patrol
+Movement speed
+
+Player:
+Collider
+Position
+Movement speed
+
+Wall:
+Collider
+Position
+Dimensions
+
+Level:
+collection of walls
+collection of items and/or passcode digits
+
+Field of vision:
+Pygame rect - dim yellow rectangle
+
+Collider:
+
+Position - list [x,y]
+Direction - int angle
+Movement speed - int pixelsPerSecond
+
+
+Camera:
+Position
+Screen size?
+
+Use timers rather than frames
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
