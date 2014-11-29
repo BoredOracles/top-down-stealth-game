@@ -9,11 +9,15 @@ Direction
 Field of Vision
 Patrol
 Movement speed
+Alert boolean
+method RequestHelp called continually when on alert
 
 Player:
 Collider
 Position
 Movement speed
+Direction
+Controls
 
 Wall:
 Collider
@@ -32,7 +36,7 @@ Collider:
 Position - list [x,y]
 Direction - int angle
 Movement speed - int pixelsPerSecond
-
+Settings - dictionary that gets pickled
 
 Camera:
 Position
