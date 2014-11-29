@@ -36,4 +36,4 @@
 * The alert is ongoing, checks while chasing for new nearby robots
 * Robots may or may not move faster
 
-##If the player is caught, he is sent to the ground floor.
+##If the player is caught, he is sent to the bathroom.
