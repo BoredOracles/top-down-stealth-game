@@ -1,3 +1,15 @@
 Put in this file any ideas you have for game design, code design, or really anything new or anything to consider. 
 remember to put your name by it.
 We will discuss either at the in person sessions or via the skype chat.
+
+    def move(self):
+        if time.clock() - self.moveTimer >= self.pauseTime:
+            if self.sneak:
+                self.position = [self.position[0] + (self.dx * self.sneakConstant),
+                                 self.position[1] + (self.dy * self.sneakConstant)]
+            else:
+                self.position = [self.position[0] + self.dx, self.position[1] + self.dy]
+            self.moveTimer = time.clock()
+            player.rectUpdate()
+
+            #TODO : update direction and Rect
