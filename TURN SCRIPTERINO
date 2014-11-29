@@ -1,0 +1,44 @@
+def turnDirection (dx,dy,direction):## direction is the ANGLE the player is facing
+                                    ## dx and dy are the new COORDINATES to turn to face
+                                    ## i.e -1<dx<1 and -1<dy<1, these integers describe
+                                    ## in which direction we turn a segment
+## This finds the destination angle:
+    if dx > 0:
+        if dy > 0:
+            newAngle = 135
+        elif dy < 0:
+            newAngle = 45
+        else:
+            newAngle = 90
+
+    elif dx < 0:
+        if dy > 0:
+            newAngle = 225
+        elif dy < 0:
+            newAngle = 315
+        else:
+            newAngle = 270
+
+    else:
+        if dy == 1:
+            newAngle = 180
+        else:
+            newAngle = 0
+
+
+## This defines the total angle change
+    dAngle = direction - newAngle
+
+##For when the angle is bigger than 180, the other direction is more efficient
+    if dAngle > 180:
+        dAngle = 180 - dAngle
+
+## Returns an integer, 1 for clockwise motion, -1 for anticlockwise motion, 0 for no motion
+    if dAngle > 0:
+        return -1
+    elif dAngle < 0:
+        return 1
+    else:
+        return 0
+    
+print(turnDirection (1,1,270))
