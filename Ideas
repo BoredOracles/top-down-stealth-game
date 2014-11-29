@@ -13,3 +13,16 @@ We will discuss either at the in person sessions or via the skype chat.
             player.rectUpdate()
 
             #TODO : update direction and Rect
+
+
+import cPickle as pickle
+
+settingsFile = open("settings.HCBS",'rb')
+settings = pickle.load(settingsFile)
+settingsFile.close()
+
+change settings
+
+fileName = open("settings.HCBS","wb")
+pickle.dump(settings,fileName)
+fileName.close()
